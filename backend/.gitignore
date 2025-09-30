@@ -1,0 +1,63 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build folders
+/build
+/dist
+/out
+/public/build
+
+# React/Frontend files
+*.cache
+.cache/
+*.pnp.*
+.pnp.js
+
+# Test coverage
+coverage/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Misc
+*.tgz
+*.zip
+*.rar
+*.bak
+*.tmp
+*.temp
+
+# Optional: yarn or npm lock file (if you want to exclude)
+# package-lock.json
+# yarn.lock
+
+# Cloudinary temp uploads or local uploads
+/uploads/
