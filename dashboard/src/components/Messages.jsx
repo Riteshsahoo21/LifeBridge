@@ -7,6 +7,7 @@ import { Navigate } from "react-router-dom";
 const Messages = () => {
   const [messages, setMessages] = useState([]);
   const { isAuthenticated } = useContext(Context);
+
   useEffect(() => {
     const fetchMessages = async () => {
       try {
@@ -14,9 +15,13 @@ const Messages = () => {
           "http://localhost:4000/api/v1/message/getall",
           { withCredentials: true }
         );
-        setMessages(data.messages);
+        // Only keep messages sent by users
+        const userMessages = data.messages.filter(
+          (msg) => msg.senderType === "user"
+        );
+        setMessages(userMessages);
       } catch (error) {
-        console.log(error.response.data.message);
+        console.log(error.response?.data?.message || error.message);
       }
     };
     fetchMessages();
@@ -28,34 +33,32 @@ const Messages = () => {
 
   return (
     <section className="page messages">
-      <h1>MESSAGE</h1>
+      <h1>User Messages</h1>
       <div className="banner">
         {messages && messages.length > 0 ? (
-          messages.map((element) => {
-            return (
-              <div className="card" key={element._id}>
-                <div className="details">
-                  <p>
-                    First Name: <span>{element.firstName}</span>
-                  </p>
-                  <p>
-                    Last Name: <span>{element.lastName}</span>
-                  </p>
-                  <p>
-                    Email: <span>{element.email}</span>
-                  </p>
-                  <p>
-                    Phone: <span>{element.phone}</span>
-                  </p>
-                  <p>
-                    Message: <span>{element.message}</span>
-                  </p>
-                </div>
+          messages.map((element) => (
+            <div className="card" key={element._id}>
+              <div className="details">
+                <p>
+                  First Name: <span>{element.firstName}</span>
+                </p>
+                <p>
+                  Last Name: <span>{element.lastName}</span>
+                </p>
+                <p>
+                  Email: <span>{element.email}</span>
+                </p>
+                <p>
+                  Phone: <span>{element.phone}</span>
+                </p>
+                <p>
+                  Message: <span>{element.message}</span>
+                </p>
               </div>
-            );
-          })
+            </div>
+          ))
         ) : (
-          <h1>No Messages!</h1>
+          <h2>No User Messages!</h2>
         )}
       </div>
     </section>
