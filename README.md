@@ -259,6 +259,14 @@ CLOUDINARY_API_SECRET=your_api_secret
 Add screenshots inside the `assets` folder and reference them like this:
 
 <img width="1878" height="997" alt="image1" src="https://github.com/user-attachments/assets/4bd6e82b-eb7b-418e-8e83-fec80e50e753" />
+<img width="1855" height="898" alt="image2" src="https://github.com/user-attachments/assets/69ee0c6a-91ce-4827-8c67-4b59df9cf396" />
+<img width="1855" height="898" alt="image2" src="https://github.com/user-attachments/assets/585c033b-19b8-4bf5-8503-3cc2b6a9fb55" />
+<img width="1886" height="993" alt="image4" src="https://github.com/user-attachments/assets/f1e1d670-e25c-407e-942b-60971d23f6aa" />
+<img width="1876" height="957" alt="image5" src="https://github.com/user-attachments/assets/ab45bf5d-f969-4127-ac0f-d4ec87bfa590" />
+
+
+
+
 
 
 ---
