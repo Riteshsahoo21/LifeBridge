@@ -18,3 +18,7 @@ This README will guide you through getting started with the project locally.
 ---
 
 ## 📁 Project Structure
+LifeBridge/
+├── frontend/ # UI code
+├── backend/ # API services
+├── dashboard/ # Admin panel
