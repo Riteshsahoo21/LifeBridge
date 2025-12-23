@@ -22,6 +22,7 @@ LifeBridge/
 - frontend/          Client-side application
 - backend/           Server-side APIs
 - dashboard/         Admin dashboard
+- assets/            Images and screenshots
 - .gitignore
 - README.md
 
@@ -29,23 +30,29 @@ LifeBridge/
 
 ## Technologies Used
 
-- JavaScript
+- JavaScript (ES6+)
 - HTML5
 - CSS3
 - Node.js
 - Express.js
+- MongoDB
+- JWT (JSON Web Token)
+- bcrypt (Password Hashing)
+- Cloudinary (Image Storage)
 - npm
-- Modern frontend framework (React or similar)
+- React (Frontend Framework)
 
 ---
 
 ## Features
 
-- Modular frontend, backend, and dashboard
-- RESTful API architecture
+- Modular frontend, backend, and dashboard architecture
+- Secure authentication using JWT and bcrypt
+- MongoDB database integration
+- Cloudinary for image uploads and storage
 - Admin dashboard for management
 - Scalable and maintainable codebase
-- Clean project structure
+- Clean and organized project structure
 
 ---
 
@@ -111,26 +118,17 @@ Create a `.env` file inside the backend folder:
 PORT=5000  
 DB_URI=your_database_url  
 JWT_SECRET=your_secret_key  
+CLOUDINARY_CLOUD_NAME=your_cloud_name  
+CLOUDINARY_API_KEY=your_api_key  
+CLOUDINARY_API_SECRET=your_api_secret  
 
 ---
 
-## API Overview
+## Screenshots
 
-GET    /api/users           Get all users  
-POST   /api/auth/login     User login  
-POST   /api/auth/register  User registration  
+Add screenshots inside the `assets` folder and reference them like this:
 
----
-
-## Testing
-
-npm test  
-
----
-
-## License
-
-This project is licensed under the MIT License.
+![Dashboard](assets/dashboard.png)
 
 ---
 
@@ -144,4 +142,3 @@ GitHub: https://github.com/Riteshsahoo21
 ## Support
 
 If you like this project, please give it a ⭐ on GitHub.
-
