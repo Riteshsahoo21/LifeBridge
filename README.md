@@ -128,13 +128,13 @@ CLOUDINARY_API_SECRET=your_api_secret
 ## Screenshots
 
 Some Snapshots:
-
+<img width="1902" height="1015" alt="image0" src="https://github.com/user-attachments/assets/1e589e27-dbf9-4d6f-a0e5-86a0e17be119" />
 <img width="1878" height="997" alt="image1" src="https://github.com/user-attachments/assets/4bd6e82b-eb7b-418e-8e83-fec80e50e753" />
 <img width="1855" height="898" alt="image2" src="https://github.com/user-attachments/assets/69ee0c6a-91ce-4827-8c67-4b59df9cf396" />
-<img width="1855" height="898" alt="image2" src="https://github.com/user-attachments/assets/585c033b-19b8-4bf5-8503-3cc2b6a9fb55" />
+<img width="1919" height="1007" alt="image99" src="https://github.com/user-attachments/assets/a031ca89-0ac9-47ce-8131-e9285fa04023" />
+<img width="1917" height="995" alt="image3" src="https://github.com/user-attachments/assets/5a0bc58a-46a4-4b3f-971c-954866c8e8e1" />
 <img width="1886" height="993" alt="image4" src="https://github.com/user-attachments/assets/f1e1d670-e25c-407e-942b-60971d23f6aa" />
 <img width="1876" height="957" alt="image5" src="https://github.com/user-attachments/assets/ab45bf5d-f969-4127-ac0f-d4ec87bfa590" />
-
 
 
 
